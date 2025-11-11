@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": ["data-bin/finetune/x86","--num-classes","50","--task","data_structure_mf","--criterion","data_structure_mf","--arch","roberta_mf_nau","--reset-optimizer","--reset-dataloader","--reset-meters","--optimizer","adam","--adam-betas","'(0.9,0.98)'","--adam-eps","1e-6","--clip-norm","0.0","--lr-scheduler","polynomial_decay","--lr","1e-5","--warmup-updates","100","--total-num-update","6000","--dropout","0.1","--attention-dropout","0.1","--weight-decay","0.01","--best-checkpoint-metric","accuracy","--maximize-best-checkpoint-metric","--encoder-layers","8","--encoder-embed-dim","768","--encoder-attention-heads","12","--max-positions","512","--max-sentences","8","--update-freq","4","--max-update","6000","--log-format","json","--log-interval","10","--no-epoch-checkpoints","--save-dir","$CHECKPOINT_PATH/","--memory-efficient-fp16","--restore-file","$CHECKPOINT_PATH/checkpoint_best.pt"]
+        }
+    ]
+}
